@@ -1,16 +1,16 @@
+
 def line(array)
-	if array.size() == 0
-		puts "The line is currently empty."
-	else
-		new_array = []
-		i = 0
-		until i == array.size()
-			new_array.push("#{i+1}. #{array[i]} ")
-			i += 1
-		end
-		
-		puts "The line is currently: #{new_array.join("")}"
-	end
+  if array.length >= 1
+    nuarray = []
+    counter = 1 
+    array.each do |name|
+      nuarray.push("#{counter}. #{name}")
+      counter += 1 
+    end 
+    puts "The line is currently: #{nuarray.join(" ")}"
+  else
+    puts "The line is currently empty."
+  end
 end
 def take_a_number(array, person)
 	array[array.size] = person
