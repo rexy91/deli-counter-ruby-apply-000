@@ -9,10 +9,9 @@ def line(array)
 			i += 1
 		end
 		
-		puts "The line is currently: #{new_array.join()}"
+		puts "The line is currently: #{new_array.join("")}"
 	end
 end
-
 def take_a_number(array, person)
 	array[array.size] = person
 	puts "Welcome, #{person}. You are number #{array.size} in line."
